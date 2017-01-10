@@ -1,8 +1,11 @@
 #!/bin/bash
+
+executable="./factorial"
+
 function verify_factorial {
   input=${1}
   expected_output=${2}
-  output=`echo ${input} | ./factor | grep factorial\( | awk {'print $3'}`
+  output=`echo ${input} | ${executable} | grep factorial\( | awk {'print $3'}`
   if [ "${expected_output}" -ne "${output}" ]
   then
     exit 1
