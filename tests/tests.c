@@ -12,7 +12,7 @@ bool testFactorial0() {
     bool correct = true;
     int arg = 0;
     long result = factorial(arg);
-    if(result != 2) {
+    if(result != 1) {
         printf("%%TEST_FAILED%% time=0 testname=testNew (newsimpletest) message=Error calculating %d factorial.\n", arg);
         correct = false;
     }
